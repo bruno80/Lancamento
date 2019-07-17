@@ -1,5 +1,7 @@
 {
   "name": "lancamento",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

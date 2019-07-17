@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastrar Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Nome: </ion-label>
+    <ion-input [(ngModel)]="usuario.nome"></ion-input>
+  </ion-item>
+  <ion-card>
+    <img src="{{usuario.foto}}" alt="">
+    <ion-button expand="full" (click)="foto()">Take</ion-button>
+  </ion-card>
+
+  <ion-button expand="block" (click)="add()">Atualizar</ion-button>
+</ion-content>
