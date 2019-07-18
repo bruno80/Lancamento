@@ -10,12 +10,16 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PerfilPageModule } from './perfil/perfil.module';
 import { Camera } from '@ionic-native/camera/ngx';
+import { HttpClientModule } from '@angular/common/http';
+import { AddPageModule } from './add/add.module';
+
+
 
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, PerfilPageModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, PerfilPageModule, HttpClientModule, AddPageModule],
   providers: [
     StatusBar,
     SplashScreen,
